@@ -23,9 +23,13 @@ import static java.lang.Math.*;
 			drawCircle(rb.x, rb.r, rb.r, Shape.POLYGON_LINE_LOOP);
 			
 			style.strokeWidth = 5;
-			
-			
 		
-			drawLine(rb.x,rb.r,rb.x+(-(rb.r*sin(rb.w*rb.x))),rb.r+(-(rb.r*cos(rb.w*rb.x))));
+			drawLine(rb.x,rb.r,rb.x+(rb.Kx),rb.r+(rb.Ky));
+			
+			style.strokeWidth = 3;
+			
+			drawRectangle(rb.wand, 0, rb.wand+0.5, 1, Shape.POLYGON_LINE_LOOP);
+			
+			
 		}
 }
